@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SHARIF MIFTAHUDIN | .NET Developer</title>
+<style>
+:root{--c1:#01161e;--c2:#124559;--c3:#598392;--c4:#aec3b0;--c5:#eff6e0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:var(--c1);color:var(--c5);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block}
+.ui{position:fixed;z-index:5;mix-blend-mode:difference;color:#fff;pointer-events:none}
+.ui a,.ui button,.ui li{pointer-events:auto}
+header{left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:flex-start;padding:calc(22px + env(safe-area-inset-top,0px)) 28px 0}
+.logo{font-weight:800;letter-spacing:.28em;font-size:14px}
+.nav{display:flex;gap:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+button{all:unset;cursor:pointer}
+#hero{left:28px;bottom:calc(70px + env(safe-area-inset-bottom,0px));max-width:90vw}
+#hero small{display:block;font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+#ttl{font-size:clamp(54px,14vw,210px);line-height:.88;font-weight:800;text-transform:uppercase;letter-spacing:-.04em;overflow:hidden;padding-bottom:.06em}
+#ttl span{display:inline-block;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+#sub{margin-top:14px;font-size:clamp(13px,1.6vw,17px);letter-spacing:.06em}
+#list{right:28px;top:50%;transform:translateY(-50%);list-style:none;text-align:right;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+#list li{padding:7px 0;cursor:pointer;opacity:.45;transition:opacity .3s}
+#list li.on{opacity:1}
+#list li.on::before{content:"";display:inline-block;width:34px;height:1px;background:#fff;vertical-align:middle;margin-right:10px}
+#cnt{right:28px;bottom:calc(26px + env(safe-area-inset-bottom,0px));font-size:13px;letter-spacing:.2em;text-align:right}
+#hint{left:28px;bottom:calc(26px + env(safe-area-inset-bottom,0px));font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+@media (max-width:700px){#list{display:none}.nav{gap:16px}}
+#about{position:fixed;inset:0;z-index:10;background:var(--c5);color:var(--c1);overflow:auto;transform:translateY(102%);transition:transform .8s cubic-bezier(.7,0,.2,1);padding:calc(70px + env(safe-area-inset-top,0px)) 28px calc(60px + env(safe-area-inset-bottom,0px))}
+body.about #about{transform:none}
+#x{position:fixed;z-index:11;right:28px;top:calc(22px + env(safe-area-inset-top,0px));font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--c1);display:none}
+body.about #x{display:block}
+.w{max-width:960px;margin:0 auto}
+#about h2{font-size:clamp(40px,9vw,120px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin-bottom:28px}
+#about h3{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--c3);margin:36px 0 12px}
+#about p{font-size:clamp(17px,2.2vw,24px);line-height:1.5;max-width:760px}
+.r{display:grid;grid-template-columns:1fr 2fr;gap:6px 24px;padding:14px 0;border-top:1px solid rgba(1,22,30,.2)}
+.r b{font-weight:600}.r span{color:var(--c2);font-size:14px;display:block}.r div{font-size:15px;line-height:1.5}
+@media (max-width:700px){.r{grid-template-columns:1fr}}
+.sk{font-size:15px;line-height:1.9;color:var(--c2)}
+#about a{color:var(--c2)}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header class="ui"><div class="logo">SHARIF</div><div class="nav"><button id="ab">About</button></div></header>
+<div class="ui" id="hero"><small id="tag"></small><div id="ttl"></div><div id="sub"></div></div>
+<ul class="ui" id="list"></ul>
+<div class="ui" id="hint">Scroll / drag</div>
+<div class="ui" id="cnt"></div>
+<button id="x">Close ✕</button>
+<section id="about"><div class="w">
+  <h2>Muhamad Sharif Miftahudin</h2>
+  <p>.NET and full-stack developer from Jakarta. I build ERP, payroll, inventory and asset-management systems with C#, SQL Server, ASP.NET and Angular – and I like making data-heavy software feel fast and clear.</p>
+  <h3>Experience</h3>
+  <div class="r"><div><b>Full Stack .NET Developer</b><span>PT Ekrut Indonesia · Oct 2025 – now</span></div><div>ERP modules for HR, Payroll, Finance, Inventory and Procurement with C# WinForms, DevExpress, ASP.NET MVC and SQL Server. REST APIs, query tuning, Microsoft Copilot integration.</div></div>
+  <div class="r"><div><b>Full Stack Developer</b><span>PT Code Development Indonesia · 2024 – 2025</span></div><div>Asset management system with ASP.NET and AngularJS. SQL Server and PostgreSQL, TDD, RDLC reports, Azure DevOps CI/CD, Scrum.</div></div>
+  <div class="r"><div><b>Desktop Developer</b><span>PT Evergreen Hans · 2023 – 2024</span></div><div>Employee, payroll and inventory system in VB.NET with RDLC and Crystal Reports. Worked directly with 7 clients and trained end users.</div></div>
+  <div class="r"><div><b>Freelance Mentor</b><span>PT CodingStar · 2022 – now</span></div><div>Teaching HTML and CSS to teenagers through hands-on projects.</div></div>
+  <div class="r"><div><b>Front End Developer</b><span>PT Metranet · 2021</span></div><div>API integration (+20% responsiveness), responsive interfaces, modern JS tooling (−15% dev time).</div></div>
+  <div class="r"><div><b>Web Developer</b><span>PT Global Milenial Grup · 2020 – 2021</span></div><div>Six WordPress websites with HTML, CSS and JavaScript.</div></div>
+  <h3>Skills</h3>
+  <div class="sk">ASP.NET · C# · VB.NET · SQL Server · PostgreSQL · MySQL · AngularJS · NextJS · ReactJS · ExpressJS · Java Spring Boot · PHP · DevExpress · RDLC · Crystal Reports · Azure DevOps · Agile / Scrum · TDD · WordPress · Mentoring</div>
+  <h3>Education</h3>
+  <div class="sk">Bachelor of Informatics Engineering, Politeknik Pos Indonesia (2018 – 2022)</div>
+  <h3>Contact</h3>
+  <div class="sk"><a href="mailto:kopisharif@gmail.com">kopisharif@gmail.com</a> · <a href="https://github.com/Sharif-ux" target="_blank" rel="noopener">github.com/Sharif-ux</a></div>
+</div></section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const S=[
+ {n:'Coding',sub:'C# · .NET · SQL Server · Angular',tag:'#001 — What I do'},
+ {n:'Sawit',sub:'Harvest, payroll & HR data for palm oil plantations',tag:'#002 — Where I work'},
+ {n:'Gaming',sub:'Play · performance · graphics',tag:'#003 — How I recharge'},
+ {n:'Systems',sub:'ERP · HR · Finance · Inventory · Procurement',tag:'#004 — PT Ekrut Indonesia'}];
+const N=S.length,W=1280,H=800;
+// ---- procedural "footage"
+const mk=f=>{const c=document.createElement('canvas');c.width=W;c.height=H;f(c.getContext('2d'));const t=new THREE.CanvasTexture(c);t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;return t};
+const grad=(g,a,b,v)=>{const r=v?g.createLinearGradient(0,0,0,H):g.createLinearGradient(0,0,W,H);r.addColorStop(0,a);r.addColorStop(1,b);g.fillStyle=r;g.fillRect(0,0,W,H)};
+const KW=/^(public|class|string|bool|true|async|Task|await)$/;
+function code(g){
+  grad(g,'#01161e','#124559');
+  const L=['// sharif.cs','public class Developer','{','  string Name = "Sharif";','  string[] Stack = {','    "C#", ".NET", "SQL Server",','    "ASP.NET", "Angular" };','  bool Sawit = true;','  bool Gaming = true;','  async Task Build() =>','    await Ship("ERP");','}'];
+  g.font='bold 32px Consolas,Menlo,monospace';
+  L.forEach((s,i)=>{let x=150;const y=150+i*50;g.fillStyle='#598392';g.fillText(String(i+1).padStart(2),70,y);
+    (s.match(/\/\/.*|"[^"]*"|\w+|\s+|./g)||[]).forEach(t=>{g.fillStyle=t.startsWith('//')?'#598392':t[0]=='"'?'#aec3b0':KW.test(t)?'#7aa3b3':/^[A-Z]/.test(t)?'#eff6e0':'#cfdccf';g.fillText(t,x,y);x+=g.measureText(t).width})});
+}
+function palm(g,x,y,s,col){
+  g.strokeStyle=col;g.lineCap='round';g.lineWidth=16*s;g.beginPath();g.moveTo(x,y);g.quadraticCurveTo(x+50*s,y-200*s,x+14*s,y-390*s);g.stroke();
+  const tx=x+14*s,ty=y-390*s;g.lineWidth=7*s;
+  for(let i=0;i<11;i++){const a=Math.PI*i/10,cx=Math.cos(a);g.beginPath();g.moveTo(tx,ty);g.quadraticCurveTo(tx+cx*100*s,ty-Math.sin(a)*100*s-20*s,tx+cx*200*s,ty+30*s+Math.abs(cx)*70*s);g.stroke()}
+  g.fillStyle='#e8590c';for(let i=0;i<7;i++){g.beginPath();g.arc(tx+(i-3)*9*s,ty+14*s+(i%3)*8*s,9*s,0,7);g.fill()}
+}
+function sawit(g){
+  const r=g.createLinearGradient(0,0,0,H);r.addColorStop(0,'#124559');r.addColorStop(.62,'#aec3b0');r.addColorStop(1,'#eff6e0');g.fillStyle=r;g.fillRect(0,0,W,H);
+  g.fillStyle='#eff6e0';g.beginPath();g.arc(880,360,120,0,7);g.fill();
+  g.fillStyle='#598392';for(let i=0;i<9;i++)palm(g,80+i*150,640,.38,'#598392');
+  g.fillStyle='#0b2a36';g.fillRect(0,640,W,160);
+  palm(g,260,760,1.1,'#01161e');palm(g,1020,770,1.3,'#01161e');palm(g,640,740,.8,'#01161e');
+}
+function game(g){
+  grad(g,'#01161e','#2a0a4a',1);
+  const s=g.createLinearGradient(0,180,0,430);s.addColorStop(0,'#ffb84d');s.addColorStop(1,'#ff2bd6');
+  g.fillStyle=s;g.beginPath();g.arc(640,400,210,Math.PI,0);g.fill();
+  g.fillStyle='#16072b';g.fillRect(0,430,W,370);
+  g.strokeStyle='#22d3ee';g.lineWidth=2;
+  for(let i=-24;i<=24;i++){g.beginPath();g.moveTo(640,430);g.lineTo(640+i*190,H);g.stroke()}
+  for(let k=1;k<12;k++){const y=430+Math.pow(k/11,2.2)*370;g.beginPath();g.moveTo(0,y);g.lineTo(W,y);g.stroke()}
+  g.strokeStyle='#eff6e0';g.lineWidth=3;g.beginPath();g.arc(640,300,46,0,7);g.moveTo(560,300);g.lineTo(720,300);g.moveTo(640,220);g.lineTo(640,380);g.stroke();
+  g.fillStyle='#eff6e0';g.font='bold 26px monospace';g.fillText('LVL 24 · HARVEST MODE',60,70);g.textAlign='right';g.fillText('FFB 1,284',W-60,70);
+  g.fillStyle='#e8590c';g.fillRect(60,90,260,16);
+}
+function sys(g){
+  grad(g,'#eff6e0','#aec3b0');
+  [['HR','128'],['Payroll','1.2k'],['Inventory','4.8k']].forEach(([a,b],i)=>{const x=80+i*380;g.fillStyle='rgba(1,22,30,.9)';g.fillRect(x,80,340,170);g.fillStyle='#aec3b0';g.font='24px sans-serif';g.fillText(a,x+24,126);g.fillStyle='#eff6e0';g.font='bold 74px sans-serif';g.fillText(b,x+24,215)});
+  g.fillStyle='#124559';[.4,.65,.5,.8,.6,.95,.7,.85].forEach((h,i)=>g.fillRect(100+i*72,720-h*380,50,h*380));
+  g.strokeStyle='#01161e';g.lineWidth=6;g.beginPath();[.3,.5,.4,.7,.55,.85,.75,.95].forEach((v,i)=>{const x=740+i*68,y=720-v*380;i?g.lineTo(x,y):g.moveTo(x,y)});g.stroke();
+  g.fillStyle='#598392';[.3,.5,.4,.7,.55,.85,.75,.95].forEach((v,i)=>{g.beginPath();g.arc(740+i*68,720-v*380,9,0,7);g.fill()});
+}
+const tx=[code,sawit,game,sys].map(mk);
+// ---- WebGL shader slider (diagonal fold mix, after taotajima.jp)
+const ren=new THREE.WebGLRenderer({canvas:$('gl'),antialias:false});
+ren.setPixelRatio(Math.min(devicePixelRatio,2));
+const sc=new THREE.Scene(),cam=new THREE.OrthographicCamera(-1,1,1,-1,0,1);
+const U={t1:{value:tx[0]},t2:{value:tx[1]},p:{value:0},time:{value:0},res:{value:new THREE.Vector2(1,1)},tres:{value:new THREE.Vector2(W,H)}};
+sc.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.ShaderMaterial({uniforms:U,
+vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position,1.);}',
+fragmentShader:`precision highp float;uniform sampler2D t1,t2;uniform float p,time;uniform vec2 res,tres;varying vec2 vUv;
+vec2 cov(vec2 u){float ra=res.x/res.y,ta=tres.x/tres.y;vec2 s=ra>ta?vec2(1.,ta/ra):vec2(ra/ta,1.);return (u-.5)*s+.5;}
+void main(){vec2 u=cov(vUv);float w=sin(p*3.14159);u.x+=sin(u.y*8.+time)*.012*w;
+float d=vUv.y*.8+vUv.x*.4;float m=smoothstep(0.,.45,p*1.7-d);
+vec4 a=texture2D(t1,vec2(u.x,clamp(u.y-p*.18,0.,1.)));vec4 b=texture2D(t2,vec2(u.x,clamp(u.y+(1.-p)*.18,0.,1.)));
+vec4 c=mix(a,b,m);c.rgb+=.10*smoothstep(0.,.5,m)*smoothstep(1.,.5,m);gl_FragColor=c;}`})));
+function rs(){ren.setSize(innerWidth,innerHeight,false);U.res.value.set(innerWidth,innerHeight)}
+addEventListener('resize',rs);rs();
+// ---- scroll logic: integer = slide, fraction = progress, gravity snaps to whole numbers
+let target=0,prog=0,lastIn=0,cur=-1,open=false;
+const nudge=d=>{if(open)return;target+=d;lastIn=performance.now()};
+addEventListener('wheel',e=>nudge(e.deltaY*.0009),{passive:true});
+let ty=0;
+addEventListener('touchstart',e=>ty=e.touches[0].clientY,{passive:true});
+addEventListener('touchmove',e=>{const y=e.touches[0].clientY;nudge((ty-y)*.004);ty=y},{passive:true});
+addEventListener('keydown',e=>{
+  if(e.key==='Escape')return toggle(false);
+  if(open)return;
+  if(['ArrowDown','ArrowRight','PageDown',' '].includes(e.key))target=Math.round(target)+1;
+  if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key))target=Math.round(target)-1;
+});
+const mod=k=>((k%N)+N)%N;
+function goTo(i){const b=Math.round(target);let d=mod(i-b);if(d>N/2)d-=N;target=b+d}
+// ---- UI
+S.forEach((s,i)=>{const li=document.createElement('li');li.textContent=String(i+1).padStart(3,'0')+'  '+s.n;li.onclick=()=>goTo(i);$('list').appendChild(li)});
+function ui(k){
+  const i=mod(k);if(i===cur)return;cur=i;
+  $('tag').textContent=S[i].tag;$('sub').textContent=S[i].sub;
+  $('ttl').innerHTML='';[...S[i].n].forEach((c,j)=>{const s=document.createElement('span');s.textContent=c;s.style.animationDelay=j*.05+'s';$('ttl').appendChild(s)});
+  $('cnt').textContent=String(i+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
+  [...$('list').children].forEach((li,j)=>li.classList.toggle('on',j===i));
+}
+function toggle(v){open=v;document.body.classList.toggle('about',v)}
+$('ab').onclick=()=>toggle(!open);$('x').onclick=()=>toggle(false);
+(function frame(t){
+  requestAnimationFrame(frame);
+  if(performance.now()-lastIn>140)target+=(Math.round(target)-target)*.035;
+  prog+=(target-prog)*.09;
+  const i=Math.floor(prog);
+  U.t1.value=tx[mod(i)];U.t2.value=tx[mod(i+1)];U.p.value=prog-i;U.time.value=t*.001;
+  ui(Math.round(prog));
+  ren.render(sc,cam);
+})(0);
+</script>
+</body>
+</html>
